@@ -1,3 +1,4 @@
+@import url('./fonts/fonts.css');
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -54,7 +55,7 @@ a {
 }
 /*  box*/
 *, *::before,*::after{
-  box-sizing:boder-box;
+  box-sizing:border-box;
 }
 
 /* Global variables */
@@ -83,4 +84,117 @@ body {
   overflow: hidden;
   margin: -1px;
   clip: rect(0, 0, 0, 0);
+
 }
+.header{
+   position: relative;
+  height: 100vh;
+
+}
+
+ .hero{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: -1000;
+   animation: fade 24s infinite;
+   background: #fff center / cover no-repeat;
+  }
+  .hero:nth-of-type(1){
+    background-image: url('./images/nature-1.jpeg');
+    animation-delay: 16s;
+
+  }
+   .hero:nth-of-type(2){
+    background-image: url('./images/nature-2.jpeg');
+      animation-delay: 8s;
+  }
+   .hero:nth-of-type(3){
+    background-image: url('./images/nature-3.jpeg');
+  }
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin:0 auto;
+  padding: 0 15px;
+}
+.logo{
+  color: var(--contrast-font-color);
+  letter-spacing: 4px;
+}
+.logo a{
+  display: block;
+  padding: 32px 24px;
+  font-size: 18px;
+
+}
+
+.menu-list{
+  display: flex;
+  justify-content: space-between;
+  font-family: Lora;
+  font-size: 14px;
+
+}
+
+.menu-item{
+min-width: 110px;
+}
+.title-wrapper{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  margin: 20px;
+  color:var(--contrast-font-color);
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+}
+.title{
+padding: 24px;
+font-family: "Playfair Display";
+font-size: 50px;
+line-height:1.6;
+
+
+}
+
+.paragragh{
+  font-size:12px;
+}
+
+.menu-item a{
+  display: block;
+  width: 100%;
+  height:100%;
+  padding: 24px;
+  text-align: center;
+
+}
+
+.menu-item a:hover,.menu-item a:focus{
+  color:var(--contrast-font-color);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  29.16666% {
+    opacity: 1;
+  }
+  33.33333% {
+    opacity: 0;
+  }
+  95.83333% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
