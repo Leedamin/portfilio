@@ -233,6 +233,13 @@ flex-basis: calc(100% - 80px);
   line-height:  1.6;
 
 }
+.project-item{
+  margin-bottom: 8px;
+}
+.project-title{
+  font-size: 18px;
+  font-weight: 700;
+}
 
 @keyframes fade {
   0% {
