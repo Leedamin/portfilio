@@ -6,25 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/d2814c7790.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
 <div class="container">
+  <a class="a11y skip-link" href="#content">본문바로가기</a>
   <header class="header">
     <div class="hero"></div>
     <div class="hero"></div>
     <div class="hero"></div>
-    <div class="navbar">
+    <div id="navbar" class="navbar">
+      <div class="navbar-inner">
       <h1 class="logo"><a href="/">DAMIN</a></h1>
-      <nav class="nav">
-        <ul class="menu-list">
-          <li class="menu-item"><a href="#about">About</a></li>
-          <li class="menu-item"><a href="#biography">Biography</a></li>
-          <li class="menu-item"><a href="#skills">Skills</a></li>
-          <li class="menu-item"><a href="#projects">Projects</a></li>
-          <li class="menu-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <button id="menu-button" class="menu-button" type="button"><i class="fas fa-bars 7x"></i></button>
+      <nav id="nav" class="nav">
+      <ul class="menu-list">
+      <li class="menu-item"><a href="#about">About</a></li>
+      <li class="menu-item"><a href="#biography">Biography</a></li>
+      <li class="menu-item"><a href="#skills">Skills</a></li>
+      <li class="menu-item"><a href="#projects">Projects</a></li>
+      <li class="menu-item"><a href="#contact">Contact</a></li>
+      </ul>
+</nav>
+      </div>
+
     </div>
     <div class="title-wrapper">
       <h2 class="title">damin</h2>
@@ -34,8 +41,8 @@
 </div>
 
   </header>
-  <main class="main">
-    <section class="section about">
+  <main id="content" class="main">
+    <section id="about" class="section about">
       <h2 class="section-title">about</h2>
       <div class="section-content">
         <dl class="definition-list">
@@ -48,7 +55,7 @@
         </dl>
       </div>
     </section>
-    <section class="section biograghy">
+    <section id="biography" class="section biography">
       <h2 class="section-title">Biography</h2>
       <div class="section-content">
         <dl class="definition-list">
@@ -61,7 +68,7 @@
         </dl>
       </div>
     </section>
-    <section class="section ">
+    <section id="skills" class="section Skills ">
       <h2 class="section-title">Skills</h2>
     <ul class="section-content category-list">
       <li class="category-item">
@@ -97,7 +104,7 @@
     </ul>
     </section>
 
-    <section class="section projects">
+    <section id="projects" class="section projects">
       <h2 class="section-title">Projects</h2>
       <div class="section-content">
         <ul class="project-list">
@@ -114,7 +121,27 @@
     </section>
 
   </main>
+  <footer class="footer">
+    <div>
+      <h2 class="contact-title"></h2>
+      <address class="adress">
+        <ul class="contact-list">
+          <li class="contact-item"><a href="http://instagram.com/_dmni_" target="_balnk">Instagram @_dmni_
+          </a></li>
+          <li class="contact-item"><a href="tel:010-6327-9397">T.010-6327-9397</a></li>
+          <li class="contact-item"><a href="mailto:dmni8856@naver.com">dmni8856@naver.com</a></li>
+        </ul>
+        <small class="copyright">
+           COPYRIGHT INFORMATION GOES HERE © 2020. ALL RIGHTS RESERVED.
+        </small>
+      </address>
+    </div>
+  </footer>
+  <button id="floating-button" class="floating-button active" type="button">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
 </div>
 </body>
-
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="main.js"></script>
 </html>
